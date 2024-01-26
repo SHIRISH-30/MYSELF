@@ -6,7 +6,7 @@ function Footer() {
     <footer className="footer--container">
       <div className="footer--link--container">
         <div>
-          <img src="./img/logo.svg" alt="Logoipsum" />
+          <img src="./img/logo.png" className="logophoto" alt="Logoipsum" />
         </div>
         <div className="footer--items">
           <ul>
@@ -62,26 +62,14 @@ function Footer() {
                 Contact
               </Link>
             </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="testimonial"
-                className="text-md"
-              >
-                Testimonials
-              </Link>
-            </li>
+
           </ul>
         </div>
         <div className="footer--social--icon">
           <ul>
             <li>
               <a
-                href="https://www.facebook.com/"
+                href="https://www.facebook.com/shirish.shetty.71"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
@@ -102,7 +90,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/shirishshetty_30?igsh=Ymxmdm1jbWx0ZXQ="
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
@@ -125,7 +113,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href="https://www.twitter.com/"
+                href="https://twitter.com/ShirishShetty15"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
@@ -146,7 +134,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/shirish-shetty-5734a7250/"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
@@ -172,7 +160,7 @@ function Footer() {
       </div>
       <hr className="divider" />
       <div className="footer--content--container">
-        <p className="footer--content">Made with 💖 by John</p>
+        <p className="footer--content">Made with 💖 </p>
         <div className="footer--social--icon">
           <ul>
             <li>

@@ -35,7 +35,7 @@ function Navbar() {
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
       <div>
-        <img src="./img/logo.svg" alt="Logoipsum" />
+        <img className="logophoto" src="./img/logo.png" alt="Logoipsum" />
       </div>
       <a
         className={`nav__hamburger ${navActive ? "active" : ""}`}
@@ -69,10 +69,10 @@ function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              to="MyPortfolio"
+              to="mySkills"
               className="navbar--content"
             >
-              Portfolio
+              MySkiils
             </Link>
           </li>
           <li>
@@ -81,7 +81,7 @@ function Navbar() {
               activeClass="navbar--active-content"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={60}
               duration={500}
               to="AboutMe"
               className="navbar--content"
@@ -97,14 +97,25 @@ function Navbar() {
               smooth={true}
               offset={-70}
               duration={500}
-              to="testimonial"
+              to="MyPortfolio"
               className="navbar--content"
             >
-              Testimonials
+              Projects
             </Link>
           </li>
+
+
         </ul>
       </div>
+      <Link
+        onClick={() => {
+          closeMenu(); // assuming closeMenu is a function in your component
+          window.location.href = 'https://drive.google.com/file/d/1iTy6veQ91M7QPWhwMZw4CnlcRqQORx0g/view?usp=drive_link';
+        }}
+        className="btn btn-outline-primary"
+      >
+        RESUME
+      </Link>
       <Link
         onClick={closeMenu}
         activeClass="navbar--active-content"

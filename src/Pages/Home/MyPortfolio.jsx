@@ -1,6 +1,14 @@
+import React from 'react';
 import data from "../../data/index.json";
 
+
 export default function MyPortfolio() {
+
+  const redirectToGitHub = () => {
+    // Redirect to the GitHub URL
+    window.location.href = 'https://github.com/SHIRISH-30';
+  };
+
   return (
     <section className="portfolio--section" id="MyPortfolio">
       <div className="portfolio--container-box">
@@ -9,7 +17,7 @@ export default function MyPortfolio() {
           <h2 className="section--heading">My Portfolio</h2>
         </div>
         <div>
-          <button className="btn btn-github">
+          <button className="btn btn-github" onClick={redirectToGitHub}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -39,8 +47,8 @@ export default function MyPortfolio() {
                 <h3 className="portfolio--section--title">{item.title}</h3>
                 <p className="text-md">{item.description}</p>
               </div>
-              <p className="text-sm portfolio--link">
-                {item.link}
+              <a className="text-sm portfolio--link" href={item.link}>View on Github
+
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -56,11 +64,11 @@ export default function MyPortfolio() {
                     stroke-linejoin="round"
                   />
                 </svg>
-              </p>
+              </a>
             </div>
           </div>
         ))}
       </div>
-    </section>
+    </section >
   );
 }
