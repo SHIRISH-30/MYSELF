@@ -110,7 +110,7 @@ function Navbar() {
       <Link
         onClick={() => {
           closeMenu(); // assuming closeMenu is a function in your component
-          window.location.href = 'https://drive.google.com/file/d/1iTy6veQ91M7QPWhwMZw4CnlcRqQORx0g/view?usp=drive_link';
+          window.location.href = 'https://drive.google.com/file/d/14Y2GV8la8sbJyfq5tLdCC37AYzFKS5eR/view?usp=sharing';
         }}
         className="btn btn-outline-primary"
       >
